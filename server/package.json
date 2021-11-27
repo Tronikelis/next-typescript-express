@@ -1,0 +1,18 @@
+{
+    "name": "server",
+    "scripts": {
+        "dev": "nodemon index.ts",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.13",
+        "express": "^4.17.1",
+        "next": "file:../client/node_modules/next/"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.10",
+        "nodemon": "^2.0.15",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2"
+    }
+}
