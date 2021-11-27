@@ -3,6 +3,7 @@
     "scripts": {
         "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
         "deps": "concurrently \"cd client && npm ci\" \"cd server && npm ci\"",
+        "dev": "concurrently \"cd client && npm run watch\" \" cd server && npm run dev\"",
         "prod": "cd server && node index.js",
         "eslint": "eslint -c .eslintrc.json ."
     },
