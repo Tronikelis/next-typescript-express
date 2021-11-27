@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "ES2020",
         "module": "commonjs",
         "lib": ["es2017", "es7", "es6", "ESNext", "DOM"],
-        "outDir": "dist",
+        "outDir": "/",
         "strict": true,
         "esModuleInterop": true
     },
-    "exclude": ["node_modules", "dist", "../client"]
+    "exclude": ["node_modules", "../client"]
 }

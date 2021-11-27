@@ -9,6 +9,7 @@
         "express": "^4.17.1",
         "next": "file:../client/node_modules/next/"
     },
+    "watch": ["../client/.next"],
     "devDependencies": {
         "@types/node": "^16.11.10",
         "nodemon": "^2.0.15",

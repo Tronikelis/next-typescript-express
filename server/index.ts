@@ -10,7 +10,7 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
     const server = express();
-    
+
     server.use("/api", routes);
     server.get("*", (req, res) => handle(req, res));
 
