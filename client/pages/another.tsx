@@ -1,5 +1,3 @@
 export default function Another() {
-    return (
-        <div>Another page!</div>
-    );
+    return <div>Another page!</div>;
 }
