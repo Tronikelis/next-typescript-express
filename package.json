@@ -1,19 +1,25 @@
 {
     "name": "next-express",
+    "engines": {
+        "node": "<17"
+    },
     "scripts": {
         "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
-        "install": "concurrently \"cd client && npm ci\" \"cd server && npm ci\"",
         "dev": "cd server && npm run dev",
         "prod": "cd server && node .",
-        "eslint": "eslint -c .eslintrc.json ."
+        "lint": "eslint -c .eslintrc.json ."
     },
     "dependencies": {
-        "@next/eslint-plugin-next": "^12.0.4",
-        "@typescript-eslint/eslint-plugin": "^5.4.0",
-        "@typescript-eslint/parser": "^5.4.0",
-        "concurrently": "^6.4.0",
-        "eslint": "8.3.0",
-        "eslint-plugin-react": "^7.27.1",
+        "@next/eslint-plugin-next": "^12.0.8",
+        "@typescript-eslint/eslint-plugin": "^5.10.0",
+        "@typescript-eslint/parser": "^5.10.0",
+        "concurrently": "^7.0.0",
+        "eslint": "8.7.0",
+        "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0"
-    }
+    },
+    "workspaces": [
+        "client",
+        "server"
+    ]
 }
